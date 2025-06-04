@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g(veos+ty8l&)4oxd!j=ojpmdo_8l4=k6llgk0ky&$&78zrmg+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['Davi77.pythonanywhere.com','localhost', '127.0.0.1']
 
 
 # Application definition
@@ -121,3 +121,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+import os 
+
+STATIC_ROOT = "/home/Davi77/todo-app-django/static"
+# or, eg,
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
